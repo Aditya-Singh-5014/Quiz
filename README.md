@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# React Quiz Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple quiz application built with React that allows users to sign in, answer quiz questions, and see their results.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### Sign In Page
 
-### `npm start`
+- Access the sign-in page (`/signin`) to provide your username.
+- If no username is entered, an error message prompts you to provide a username and same goes for the password.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Navbar
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- The navbar displays the signed-in username once signed in.
+- Initially shows "Sign In" until a username is provided and signed in.
 
-### `npm test`
+### Quiz
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- The quiz consists of 5 random questions chosen from a set of 10 questions stored in `Questions.json`.
+- Navigate between questions using both previous and next buttons.
+- You can change your answers before submitting the quiz.
 
-### `npm run build`
+### Submit and Result
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Submit the quiz to see your score.
+- If you answered any questions correctly, a "Good Job" image is displayed.
+- If you answered all questions incorrectly, a "Duck" image is displayed.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Responsiveness
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This React quiz application is designed to be responsive and accessible on various devices, including desktops, tablets, and mobile phones.
 
-### `npm run eject`
+### Supported Devices
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Desktop**: Modern desktop browsers (e.g., Chrome, Firefox, Safari) with responsive layout adjustments.
+- **Tablet**: Optimized for tablet devices with medium-sized screens.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Mobile Phones**: Designed for usability on popular smartphones like iPhone 10 Pro Max, iPhone X, and Android devices.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Design Features
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Media Queries**: Adjusts layout and styling based on screen width.
+- **Flexbox and Grid**: Ensures flexible component positioning.
+- **Viewport Meta Tag**: Utilizes `<meta name="viewport" content="width=device-width, initial-scale=1">` for proper scaling on mobile.
 
-## Learn More
+### Testing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Responsive design tested on various devices using browser tools and physical devices.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Usage Tips
 
-### Code Splitting
+- Use on devices with screen sizes similar to iPhone 10 Pro Max or smaller for optimal experience.
+- Resize browser window to test responsiveness on desktop.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
 
-### Analyzing the Bundle Size
+1. **Sign In**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   - Navigate to the `/signin` route.
+   - Enter your username and click "Sign In".
 
-### Making a Progressive Web App
+2. **Quiz**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   - Navigate to the root (`/`) route to start the quiz.
+   - Answer each question and use the navigation buttons to move between questions.
 
-### Advanced Configuration
+3. **Submit**
+   - Once all questions are answered, click "Submit" to see your score.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Installation
 
-### Deployment
+To run this project locally:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Clone the repository:
 
-### `npm run build` fails to minify
+   git clone https://github.com/your-username/react-quiz-app.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. Install Dependencies
+
+   cd react-quiz-app
+   npm install
+
+3. Start the development server:
+
+   npm start
+
+4. Open your browser and navigate to "http://localhost:3000" to view the application.
+
+Technologies Used
+
+React
+React Router
+JavaScript (ES6+)
+HTML
+CSS
