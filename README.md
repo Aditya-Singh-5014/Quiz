@@ -88,10 +88,10 @@ To run this project locally:
 
 5. You can also use the github pages link "https://aditya-singh-5014.github.io/Quiz/"
 
-Technologies Used
+## Technologies Used
 
-React
-React Router
-JavaScript (ES6+)
-HTML
-CSS
+1. React: JavaScript library for building user interfaces.
+2. React Router: Library for declarative routing in React applications.
+3. JavaScript (ES6+): Modern JavaScript features used for application logic.
+4. HTML: Markup language for structuring the application.
+5. CSS: Styling language for designing the user interface.
