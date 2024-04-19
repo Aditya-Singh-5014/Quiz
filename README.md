@@ -86,6 +86,8 @@ To run this project locally:
 
 4. Open your browser and navigate to "http://localhost:3000" to view the application.
 
+5. You can also use the github pages link "https://aditya-singh-5014.github.io/Quiz/"
+
 Technologies Used
 
 React
